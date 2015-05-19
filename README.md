@@ -2,7 +2,7 @@
 
 ## Summary
 
-Dockerized Webmail ( [Roundcube](https://roundcube.net/) ).  
+Dockerized [Roundcube](https://roundcube.net/).   
 Run roundcube under the control of supervisor daemon in a docker container.  
 
 Ubuntu Vivid/Trusty images with the following services :
@@ -26,7 +26,7 @@ built on the top of the formal Ubuntu images.
 ## Pull Image
 
 ```
-$ sudo docker pull classcat/webmail
+$ sudo docker pull classcat/roundcube
 ```
 
 ## Requirement
@@ -48,7 +48,7 @@ $ sudo docker run -d --name (container-name) \
 -e SMTP_PASS=(smtp-user-password) \  
 -e LANGUAGE=(language) \  
 -e SUPPORT_URL=(support-url) \  
-classcat/webmail
+classcat/roundcube
 ```
 
 ## Example usage
@@ -64,5 +64,5 @@ docker run -d --name mywebmail -p 2022:22 -p 80:80 \
   -e SMTP_USER=foo \  
   -e SMTP_PASS=foo_password \  
   -e LANGUAGE=en_US \
-  classcat/webmail
+  classcat/roundcube
 ```
